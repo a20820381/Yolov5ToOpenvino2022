@@ -114,7 +114,7 @@ def main( ):
         img = cv2.rectangle(img, (int(box[0]), int(box[1])), (int(xmax), int(ymax)), (0, 255, 0), 3)
         img = cv2.rectangle(img, (int(box[0]), int(box[1]) - 20), (int(xmax), int(box[1])), (0, 255, 0), cv2.FILLED)
         img = cv2.putText(img, str(classId), (int(box[0]), int(box[1]) - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0))
-    cv2.imwrite("./detection_python.png", img)
+    cv2.imwrite("./output.png", img)
     
 if __name__ == '__main__':
 
