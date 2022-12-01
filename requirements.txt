@@ -1,0 +1,2 @@
+openvino-dev==2022.1
+openvino==2022.1
